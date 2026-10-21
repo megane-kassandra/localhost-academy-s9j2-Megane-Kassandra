@@ -2,21 +2,25 @@
 
 # MATSINKOU TAKOUDJOU MEGANE KASSANDRA
 
-## 1. Définition d'une clé étrangère
+## Question de compréhension
+
+La relation entre User et Post est une relation un-à-plusieurs (1:N) parce qu’un utilisateur peut publier plusieurs articles (Post), tandis qu’un article appartient à un seul utilisateur. La clé étrangère user_id dans la table posts permet d’identifier l’utilisateur qui a publié chaque article.
+
+## Définition d'une clé étrangère
 
 Une clé étrangère est un champ qui référence la clé primaire d'une autre table afin de créer une relation entre les tables et de garantir la cohérence des données.
 
-## 2. Les types de relations
+## Les types de relations
 
 - **1:1 (un à un)** : une ligne d'une table est liée à une seule ligne d'une autre table.
 - **1:N (un à plusieurs)** : une ligne d'une table peut être liée à plusieurs lignes d'une autre table.
 - **N:N (plusieurs à plusieurs)** : plusieurs lignes d'une table peuvent être liées à plusieurs lignes d'une autre table, généralement grâce à une table intermédiaire.
 
-## 3. Rôle de la normalisation
+## Rôle de la normalisation
 
 La normalisation permet d'organiser les données dans plusieurs tables afin de réduire les répétitions et d'éviter les incohérences dans la base de données.
 
-## 4. Les trois livrables réalisés
+## Les trois livrables réalisés
 
 1. ex1_blog_er_diagram.png
 2. ex2_blog_schema.sql
